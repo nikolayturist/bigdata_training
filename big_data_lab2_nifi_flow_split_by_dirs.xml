@@ -564,7 +564,7 @@
                 <properties>
                     <entry>
                         <key>Directory</key>
-                        <value>/opt/nifi/messages/${v_year}/${v_month}/${v_day}/${v_hour}/${v_minute}/</value>
+                        <value>/opt/nifi/messages/${v_year}/${v_month}/${v_day}/${v_hour}/${v_minute}</value>
                     </entry>
                     <entry>
                         <key>Conflict Resolution Strategy</key>
@@ -1087,6 +1087,12 @@
                         </value>
                     </entry>
                     <entry>
+                        <key>ts</key>
+                        <value>
+                            <name>ts</name>
+                        </value>
+                    </entry>
+                    <entry>
                         <key>v_day</key>
                         <value>
                             <name>v_day</name>
@@ -1136,6 +1142,10 @@
                         <value>100</value>
                     </entry>
                     <entry>
+                        <key>ts</key>
+                        <value>${now():format("yyyy_MM_dd_HH_mm")}</value>
+                    </entry>
+                    <entry>
                         <key>v_day</key>
                         <value>${now():format("dd")}</value>
                     </entry>
@@ -1145,7 +1155,7 @@
                     </entry>
                     <entry>
                         <key>v_minute</key>
-                        <value>${now():format("MM")}</value>
+                        <value>${now():format("mm")}</value>
                     </entry>
                     <entry>
                         <key>v_month</key>
@@ -1172,5 +1182,5 @@
             <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
         </processors>
     </snippet>
-    <timestamp>09/06/2021 08:04:13 UTC</timestamp>
+    <timestamp>09/06/2021 08:29:41 UTC</timestamp>
 </template>
