@@ -564,7 +564,7 @@
                 <properties>
                     <entry>
                         <key>Directory</key>
-                        <value>/opt/nifi/messages/${v_year}/${v_month}/${v_day}/${v_hour}/${v_minute}</value>
+                        <value>/home/nifi/${v_year}_${v_month}_${v_day}_${v_hour}_${v_minute}</value>
                     </entry>
                     <entry>
                         <key>Conflict Resolution Strategy</key>
@@ -1182,5 +1182,5 @@
             <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
         </processors>
     </snippet>
-    <timestamp>09/06/2021 08:29:41 UTC</timestamp>
+    <timestamp>09/06/2021 16:28:14 UTC</timestamp>
 </template>
